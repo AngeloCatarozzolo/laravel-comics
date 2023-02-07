@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('movies', MovieController::class);
+Route::get('/', function() {
+    return view('homepage');
+});
